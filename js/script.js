@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
   // Banner Dropdown
   // Navbar toggler icon toggle (Font Awesome)
   $('.navbar-toggler').on('click', function () {
@@ -17,8 +16,6 @@ $(document).ready(function () {
       })
     })
   })
-
-
 
   // Featured Filter Menu
 
@@ -42,19 +39,34 @@ $(document).ready(function () {
 
   const scrollSpy = new bootstrap.ScrollSpy(document.body, {
     target: '.navbar',
-    offset: 150,
+    offset: 70,
   })
-  window.addEventListener('scroll', function () {
-    const header = document.querySelector('nav.navbar')
-    if (window.scrollY > 50) {
-      header.classList.add('scrolled')
-    } else {
-      header.classList.remove('scrolled')
+
+  // Navbar scroll and mobile menu background control
+  $(window).on('scroll', function () {
+    const $navbar = $('nav.navbar')
+    if ($(this).scrollTop() > 0) {
+      $navbar.addClass('scrolled')
+    } else if (!$('.navbar-collapse').hasClass('show')) {
+      // remove background only if menu is closed
+      $navbar.removeClass('scrolled')
     }
   })
 
+  // On toggler (menu) open/close
+  $('.navbar-toggler').on('click', function () {
+    const $navbar = $('nav.navbar')
+    const $collapse = $('.navbar-collapse')
 
-
+    // wait for Bootstrap collapse animation
+    setTimeout(function () {
+      if ($collapse.hasClass('show')) {
+        $navbar.addClass('scrolled') // ensure background appears when menu is open
+      } else if ($(window).scrollTop() === 0) {
+        $navbar.removeClass('scrolled') // remove when menu closes & user is at top
+      }
+    }, 200)
+  })
 
   // Hiring Now Swiper Start ////
 
@@ -92,6 +104,4 @@ $(document).ready(function () {
   let topb = document.querySelector('.topbar')
   let topH = topb.offsetHeight
   console.log(topH)
-
-
 });
