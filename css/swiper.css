@@ -1,0 +1,52 @@
+/* Each slide (card container) */
+.swiper-slide {
+  width: clamp(400px, 60vw, 735px);
+  box-sizing: border-box;
+}
+
+/* Card design */
+.hiring-now-card {
+  width: 90%;
+  height: 90%;
+}
+/* active card box shadow */
+.swiper-slide-active .hiring-now-card{
+  box-shadow: 0px 0px 30px 0 #84c1ff;
+}
+
+/* logos */
+
+.fmcg-logos img {
+  max-width: 100%;
+  min-width: 55px;
+  height: auto;
+  /* object-fit: contain; */
+  object-fit: cover;
+}
+
+/* Slide Bar Style */
+
+/* Custom Swiper Pagination Style */
+.swiper-pagination {
+  position: relative;
+  bottom: 0;
+}
+
+/* Default dots */
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  background: #84c1ff;
+  opacity: 1;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* Active "bar" indicator */
+.swiper-pagination-bullet-active {
+  width: 55px;
+  height: 13px;
+  border-radius: 11.65px;
+  background: #84c1ff;
+  transition: all 0.3s ease;
+}

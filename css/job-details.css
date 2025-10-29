@@ -1,0 +1,72 @@
+.banner {
+  background-image: url('../images/job-details/job-details.png');
+}
+
+/* detailList */
+
+.details .row {
+  align-items: stretch !important; /* ensures both columns align equal height */
+}
+
+.details .card,
+.details .upload-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+.detailList li {
+  position: relative;
+  padding-left: 30px; /* space for icon */
+}
+
+.detailList li:first-child::before {
+  content: url('../icons/groups.png');
+}
+
+.detailList li:nth-child(2)::before {
+  content: url('../icons/location-dark.png');
+}
+
+.detailList li:last-child::before {
+  content: url('../icons/post-time.png');
+}
+
+.detailList li::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.key-repo-List {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.key-repo-List li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.key-repo-List li::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  background-color: #84C1FF;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+
+@media (min-width: 992px) {
+  .upload-card {
+    margin-left: 2rem;
+  }
+}

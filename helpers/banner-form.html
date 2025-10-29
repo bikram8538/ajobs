@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banner Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="topbar-try.css" />
+</head>
+<!-- <style>
+    /* Custom Button Background and Hover */
+
+    .btn-bg-blue {
+      background-color: #84c1ff;
+      transition: 0.3s all ease-in;
+    }
+    .btn-bg-blue:hover {
+      background-color: #699dd0;
+    }
+
+    /* Custom Font Sizes */
+    h1 {
+      font-size: 50px;
+    }
+
+    /* Custom Border Radius */
+    .rounded-12 {
+      border-radius: 12px;
+      padding: 33px 0;
+    }
+
+    /* Custom Padding */
+    .pe-52 {
+      padding-right: 52px;
+    }
+
+    .banner {
+      min-height: calc(100vh - 37px);
+      /* min-height: calc(100vh - 159px); */
+      /* min-height: 100vh; */
+      background-image: url("../images/banner/banner-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-clip: border-box;
+      background-color: #000000b3;
+      background-blend-mode: multiply;
+      padding: 150px 0;
+    }
+
+    /* Banner Input Dropdown */
+    .dropdown-icon::before {
+      content: "";
+      background: url("../icons/drop-down.png") no-repeat center / contain;
+      position: absolute;
+      top: 50%;
+      right: 10%;
+      width: 11px;
+      height: 11px;
+      transform: translateY(-50%);
+    }
+    .apply-form .btn {
+      height: 100%;
+    }
+  </style> -->
+
+<body>
+  <header class="position-fixed w-100 z-3 header">
+    <!--  Topbar -->
+
+    <div class="topbar bg-primary-blue py-2">
+      <div class="container">
+        <div class="row d-flex flex-wrap justify-content-between">
+          <div class="col-12 col-lg-6 col-md-12">
+            <ul class="topbar-inr-lft justify-content-lg-start justify-content-center d-flex mb-0">
+              <li><a href="https://maps.app.goo.gl/y3k3rXTGpw9YizEJ6" target="_blank"
+                class="text-white fw-medium d-flex align-items-center">
+                <img src="./icons/location.png" alt="location" class="me-2" />
+                14 Lane, Wilford St, Vegas USA
+              </a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-6 col-md-12">
+            <ul class="topbar-inr-rt d-flex flex-wrap justify-content-center justify-content-lg-end mb-0">
+              <li class=" px-2 px-lg-4"><a href="tel:+1541864009" class="text-white fw-medium d-flex align-items-center">
+                <img src="./icons/call.png" alt="call" class="me-2" /> Call
+                Us: 541-864-009
+              </a></li>
+
+              <li class=" px-2 px-lg-4"><a href="mailto:adjjobs@gmail.com" class="text-white fw-medium d-flex align-items-center">
+                <img src="./icons/mail.png" alt="email" class="me-2" /> Email:
+                adjjob@gmail.com
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- <main>
+    <section
+      class="banner d-flex flex-column justify-content-center align-items-center"
+    >
+      <div class="container">
+        <div class="banner-content text-center fw-semibold my-5">
+          <h1 class="text-white fw-semibold mb-4">
+            <span class="text-primary-blue">3,240</span> Jobs Availabe
+            <span class="d-lg-block">Find Your Dream Jobs Now</span>
+          </h1>
+          <p class="text-white fs-4">Find Great Jobs & settle for Future</p>
+        </div>
+        <div class="apply-form px-4 px-lg-5 bg-white rounded-12 mt-5">
+          <form action="" class="row g-3 align-items-stretch">
+            Keyword Search
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="dropdown dropdown-icon position-relative">
+                <input
+                  type="text"
+                  name="search-by-keywords"
+                  id="searchInput"
+                  placeholder="Search by keywords"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  autocomplete="off"
+                  class="form-control rounded-0 border-danger border-1 py-3 ps-4 pe-52"
+                />
+                <ul class="dropdown-menu w-100" aria-labelledby="searchInput">
+                  <li><a class="dropdown-item" href="#">Web Developer</a></li>
+                  <li><a class="dropdown-item" href="#">Civil Engineer</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Graphic Designer</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Project Manager</a></li>
+                </ul>
+              </div>
+            </div>
+            Choose City
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="dropdown dropdown-icon position-relative">
+                <input
+                  type="text"
+                  name="choose-city"
+                  id="chooseCity"
+                  placeholder="Choose City"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  autocomplete="off"
+                  class="form-control rounded-0 border-danger border-1 py-3 ps-4 pe-52"
+                />
+
+                <ul class="dropdown-menu w-100" aria-labelledby="chooseCity">
+                  <li><a class="dropdown-item" href="#">Kolkata</a></li>
+                  <li><a class="dropdown-item" href="#">Delhi</a></li>
+                  <li><a class="dropdown-item" href="#">Bangalore</a></li>
+                </ul>
+              </div>
+            </div>
+            Category
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="dropdown dropdown-icon position-relative">
+                <input
+                  type="text"
+                  name="category"
+                  id="categoryInput"
+                  placeholder="Category"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  autocomplete="off"
+                  class="form-control rounded-0 border-danger border-1 py-3 ps-4 pe-52"
+                />
+
+                <ul class="dropdown-menu w-100" aria-labelledby="categoryInput">
+                  <li><a class="dropdown-item" href="#">IT</a></li>
+                  <li><a class="dropdown-item" href="#">Engineering</a></li>
+                  <li><a class="dropdown-item" href="#">Design</a></li>
+                </ul>
+              </div>
+            </div>
+
+            Apply Button
+            <div class="col-12 col-md-6 col-lg-3 d-grid">
+              <input
+                type="button"
+                value="APPLY"
+                class="btn-bg-blue text-white fw-semibold py-2 fs-5 px-5 border-0"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

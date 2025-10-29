@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: "Poppins", sans-serif; */
+
+:root {
+  --s-9: 9px;
+  --s-10: 10px;
+  --s-12: 12px;
+  --s-13: 13px;
+  --s-14: 14px;
+  --s-15: 15px;
+  --s-18: 18px;
+  --s-22: 22px;
+  --s-25: 25px;
+  --s-27: 27px;
+  --s-33: 33px;
+  --s-35: 35px;
+  --s-50: 50px;
+  --sec-pt-100: 100px;
+  --sec-pb-140: 140px;
+}
+
+html {
+  scroll-behavior: smooth;
+   scroll-padding-top: 80px;
+}
+html,
+body {
+  width: 100% !important;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f7fc;
+  font-family: 'Poppins', sans-serif;
+}
+.sec-pad-top {
+  padding-top: var(--sec-pt-100) !important;
+}
+.sec-pad-botm {
+  padding-bottom: var(--sec-pb-140) !important;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.b {
+  border: 1px solid black;
+}
+.section-pt-100-50{
+  padding-top: 100px;
+  padding-bottom: 32px;
+}
+.container {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* Custom Background */
+
+.bg-primary-blue {
+  background-color: #84c1ff;
+}
+.bg-secondary-blue {
+  background-color: #a6d2ff;
+}
+.bg-secondary-grey {
+  background-color: #a7a7a7;
+}
+.bg-light-grey {
+  background-color: #f6f7fc;
+}
+.bg-light-md-grey {
+  color: #b4b4b4;
+}
+/* Custom Text Color */
+.text-dark-grey {
+  color: #303030;
+}
+.text-primary-blue {
+  color: #84c1ff;
+}
+.text-secondary-grey {
+  color: #a7a7a7;
+}
+.text-secondary-light-grey {
+  color: #a6a6a6;
+}
+.text-light-grey {
+  color: #f6f7fc;
+}
+.text-light-md-grey {
+  color: #b4b4b4;
+}
+.text-md-grey {
+  color: #737373;
+}
+.text-secondary-md-grey {
+  color: #8b8b8b;
+}
+.text-neutral-grey {
+  color: #adadad;
+}
+.text-soft-grey {
+  color: #b0b0b0;
+}
+.text-medium-grey {
+  color: #b6b6b6;
+}
+.text-gold {
+  color: #ffb917;
+}
+
+/* Custom Button Background and Hover */
+
+.btn-bg-blue {
+  background-color: hsl(210, 100%, 76%);
+  transition: 0.3s background-color ease-out;
+}
+.btn-bg-blue:hover {
+  background-color: hsl(230, 100%, 76%) !important;
+}
+
+.btn-bg-white {
+  background-color: #ffffff;
+  transition: 0.3s background-color ease-out;
+  border: 1px solid transparent;
+  padding: 10px 33px !important;
+}
+.btn-bg-white:hover {
+  background-color: #a6d2ff;
+  color: #f6f7fc;
+  border: 1px solid #f6f7fc;
+}
+
+/* Custom Font Size */
+
+.fs-9 {
+  font-size: var(--s-9);
+}
+.fs-10 {
+  font-size: var(--s-10);
+}
+.fs-12 {
+  font-size: var(--s-12);
+}
+.fs-13 {
+  font-size: var(--s-13);
+}
+.fs-14 {
+  font-size: var(--s-14);
+}
+.fs-15 {
+  font-size: var(--s-15);
+}
+.fs-18 {
+  font-size: var(--s-18);
+}
+.fs-22 {
+  font-size: var(--s-22);
+}
+.fs-25 {
+  font-size: var(--s-25);
+}
+.fs-27 {
+  font-size: var(--s-27);
+}
+.fs-35 {
+  font-size: var(--s-35);
+}
+.fs-50 {
+  font-size: var(--s-50);
+}
+.fs-12-ln-17 {
+  font-size: var(--s-12);
+  line-height: 1.42;
+}
+.fs-14-ln-20 {
+  font-size: var(--s-14);
+  line-height: 1.43px;
+}
+.fs-25-ln-36 {
+  font-size: var(--s-25);
+  line-height: 1.44;
+}
+
+.ln-33-fs-25 {
+  font-size: var(--s-25);
+  line-height: 1.3;
+}
+.ln-33-fs-18 {
+  font-size: var(--s-18);
+  line-height: 1.83;
+}
+/*
+_____________________________________
+Custom Line Height
+_____________________________________
+*/
+
+.ln-17 {
+  line-height: 1.89;
+}
+.ln-13 {
+  line-height: 1.44;
+}
+.ln-47 {
+  line-height: 47px;
+}
+
+/* Custom Border Radius */
+.rounded-3 {
+  border-radius: 3px !important;
+  border-color: #00000080 !important;
+}
+.rounded-12 {
+  border-radius: 12px;
+  padding: 33px 0;
+}
+.rounded-15 {
+  border-radius: 15px;
+}
+
+/*
+_______________________________________________
+_______________________________________________
+
+Navbar Start */
+
+.navbar-nav .nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #84c1ff;
+  transition: width 0.3s ease;
+}
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+.navbar-brand img {
+  max-width: 80px;
+}
+.navbar {
+  transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(10px);
+}
+.navbar-toggler i {
+  transition: transform 0.3s ease;
+}
+.navbar-toggler.collapsed i {
+  transform: rotate(0deg);
+}
+.navbar-toggler:not(.collapsed) i {
+  transform: rotate(180deg);
+}
+
+/* Navbar End
+________________________________________________
+________________________________________________
+
+Job Filter Start */
+
+.job-filter .form-select {
+  /* border: 1px solid #e0e0e0; */
+  color: #bcbcbc;
+  border-radius: 34px !important;
+  padding: 12px 45px 12px 25px;
+  background-image: none !important;
+  width: 100%;
+}
+.select-wrapper {
+  position: relative;
+  max-width: 300px;
+}
+.select-wrapper::after {
+  position: absolute;
+  content: url('../icons/drop-down.png');
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 12;
+  pointer-events: none;
+}
+/* Job Filter End
+______________________________________
+______________________________________
+
+Job Category Start */
+
+.paths .card {
+  padding: 90px 4px 22px;
+}
+
+.paths .card figure img {
+  width: 40px !important;
+  height: 40px !important;
+}
+.paths .card figure {
+  top: -40%;
+  left: 50%;
+  transform: translate(-50%, 40%);
+  box-shadow: 0px 13px 52.6px 0px rgba(0, 0, 0, 0.06);
+}
+
+/* Job Category End
+______________________________________
+______________________________________
+
+Footer Start */
+
+.footer .nav-item a {
+  transition: 0.3s all ease;
+}
+.footer .nav-item a:hover {
+  color: yellow !important;
+}
+
+.footer .contact-info .footer-con a img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer .contact-info a:hover img {
+  transform: scale(1.1) !important;
+}
+
+.footer p a,
+.footer-mid .footer-con a {
+  transition: 0.3s all ease-in;
+}
+.footer p a:hover {
+  color: yellow !important;
+}
+.footer-mid .footer-con a:hover {
+  color: yellow !important;
+}
+
+.footer-social a img {
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.25, 1.25, 0.5, 1);
+  transform: scale(1);
+}
+
+/* When hovering any anchor */
+.footer-social:hover a img {
+  transform: scale(0.9); /* all icons scale down slightly */
+}
+
+/* The hovered one scales up and stays bright */
+.footer-social a:hover img {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.footer-right button {
+  transition: transform 0.3s ease-out;
+  border: 1px solid transparent;
+}
+
+.footer-right button:hover {
+  transform: scale(1.05);
+}
+
+.submit-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.submit-wrap .submit-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+}
+.footer-form .form-control {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Footer End
+__________________________________
+__________________________________
+*/
+
+@media screen and (max-width: 991.98px) {
+  .footer-right {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+  display: none;
+}
+}

@@ -1,0 +1,13 @@
+h1{
+font-size: clamp(28px, 5vw, 48px);
+}
+.banner {
+  min-height: clamp(400px, 60vh, 700px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-clip: border-box;
+  background-color: #000000b3;
+  background-blend-mode: multiply;
+  padding: 80px 0;
+}

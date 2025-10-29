@@ -1,0 +1,332 @@
+
+
+/* Custom Background */
+
+.bg-primary-blue {
+  background-color: #84c1ff;
+}
+.bg-secondary-grey {
+  background-color: #a7a7a7;
+}
+.bg-light-grey {
+  background-color: #f6f7fc;
+}
+.bg-light-md-grey {
+  color: #b4b4b4;
+}
+/* Custom Text Color */
+
+.text-primary-blue {
+  color: #84c1ff;
+}
+.text-secondary-grey {
+  color: #a7a7a7;
+}
+.text-light-grey {
+  color: #f6f7fc;
+}
+.text-light-md-grey {
+  color: #b4b4b4;
+}
+.text-md-grey {
+  color: #737373;
+}
+.text-neutral-grey {
+  color: #adadad;
+}
+.text-soft-grey {
+  color: #b0b0b0;
+}
+
+.text-gold {
+  color: #ffb917;
+}
+
+/* Custom Button Background and Hover */
+
+.btn-bg-blue {
+  background-color: #85c2ff;
+  transition: 0.3s background-color ease-out;
+}
+.btn-bg-blue:hover {
+  background-color: hsl(230, 100%, 76%) !important;
+}
+
+/* Custom Font Sizes */
+
+h2 {
+  font-size: var(--35px);
+}
+
+/* Custom Card Changes */
+
+.topbar li a {
+  font-size: var(--fs-14);
+  transition: 0.3s all ease-in;
+}
+.topbar li a:hover {
+  color: yellow !important;
+}
+.topbar .exit-wrapper{
+  transition: 0.3s all ease;
+}
+.topbar .exit-wrapper:hover{
+  transform: scale(1.1);
+}
+.navbar-nav .nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #84c1ff;
+  transition: width 0.3s ease;
+}
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+.navbar-brand img {
+  max-width: 80px;
+}
+.navbar {
+  transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(10px);
+}
+.navbar-toggler i {
+  transition: transform 0.3s ease;
+}
+.navbar-toggler.collapsed i {
+  transform: rotate(0deg);
+}
+.navbar-toggler:not(.collapsed) i {
+  transform: rotate(180deg);
+}
+
+/* ================== Banner */
+
+.banner {
+  min-height: calc(100vh - 70px);
+  background-image: url('../images/banner/banner-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-clip: border-box;
+  background-color: #000000b3;
+  background-blend-mode: multiply;
+  padding: 80px 0;
+}
+
+/* Banner Input Dropdown */
+.dropdown-icon::before {
+  content: '';
+  background: url('../icons/drop-down.png') no-repeat center / contain;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  width: 11px;
+  height: 11px;
+  transform: translateY(-50%);
+}
+.apply-form .btn {
+  height: 100%;
+}
+
+.w-lg-90 {
+  max-width: 90%;
+}
+
+.reputed-firms-clm {
+  width: 20%;
+}
+.reputed-firms-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Remix Icon Customization */
+[class^='ri-'],
+[class*=' ri-'] {
+  line-height: 1;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+}
+.featured-companies-img {
+  width: 60px;
+  height: 60px;
+}
+.featuredDiv {
+  display: none;
+}
+.featuredDiv.show {
+  display: block;
+}
+
+#featuredBtnContainer .btn {
+  border: 0.5px solid #00000073;
+}
+#featuredBtnContainer .active {
+  background-color: #84c1ff;
+  color: #ffffff !important;
+  border: 0.5px solid transparent;
+}
+
+.upload-cv-text {
+  max-width: 400px;
+}
+
+.upload-cv-main {
+  width: 75%;
+}
+.cvUpload {
+  border-radius: 34px;
+}
+.cvFigure {
+  bottom: 0;
+  left: 1.5%;
+}
+/* Hiring Now Start */
+
+/* Hiring Now End */
+@media (min-width: 1200px) {
+  .sub-btn input[type='button'] {
+    width: 42px;
+    height: 42px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .topbar-inr-list li {
+    margin-right: 16px;
+  }
+  .topbar li a {
+    font-size: 13px;
+  }
+
+  .hiring-now-card .fs-22{
+    font-size: 18px !important;
+  }
+
+  /* navbar */
+
+  .navbar-collapse {
+    background-color: rgba(132, 193, 255, 0.5);
+    border-radius: 12px;
+    transition: all 0.4s ease;
+  }
+
+  .navbar-nav .nav-link::after {
+    display: none; /* remove underline */
+  }
+
+  .navbar-nav .nav-item:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* navbar smooth dropdown aniamtion */
+  .collapse.navbar-collapse {
+    height: 0;
+  }
+  .collapse.show {
+    height: auto;
+  }
+
+  .navbar-toggler i {
+    font-size: 28px;
+  }
+
+  .upload-cv-text .fs-35 {
+    font-size: 25px;
+  }
+  .upload-cv-text p {
+    font-size: 16px !important;
+  }
+  .sub-btn input[type='button'] {
+    width: 36px;
+    height: 36px;
+  }
+  .swiper-slide {
+    width: 360px;
+  }
+}
+@media (max-width: 991px) {
+
+}
+@media (max-width: 767.98px) {
+  .top-bar-logout {
+    display: none;
+  }
+  .topbar li a {
+    font-size: 12px;
+  }
+  .reputed-firms-logo img {
+    max-width: 60px;
+  }
+
+  .upload-cv-text .fs-35 {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .upload-cv-text p {
+    font-size: 12px !important;
+    text-align: center;
+  }
+  .cvFigure {
+    width: 30%;
+  }
+}
+@media (max-width: 575.98px) {
+  .topbar {
+    font-size: 12px;
+  }
+  .topbar img {
+    width: 14px;
+  }
+  .upload-cv-main {
+    width: 100% !important;
+  }
+  .upload-cv-text {
+    text-align: center;
+  }
+  .upload-cv-text .fs-35 {
+    font-size: 18px;
+  }
+  .upload-cv-main form .fs-22 {
+    font-size: 12px;
+  }
+  .upload-cv-text p {
+    font-size: 12px;
+  }
+  .cvUpload {
+    border-radius: 14px;
+  }
+  .sub-btn input[type='button'] {
+    width: 34px;
+    height: 34px;
+  }
+
+  .sub-btn::after {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  .swiper-slide {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .upload-cv-main {
+    width: 100% !important;
+  }
+}
