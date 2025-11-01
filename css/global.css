@@ -21,7 +21,7 @@
 
 html {
   scroll-behavior: smooth;
-   scroll-padding-top: 80px;
+  scroll-padding-top: 80px;
 }
 html,
 body {
@@ -33,6 +33,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: none;
+  scrollbar-color: #84c1ff #f1f1f1;
 }
 
 body {
@@ -54,7 +56,7 @@ a {
 .b {
   border: 1px solid black;
 }
-.section-pt-100-50{
+.section-pt-100-50 {
   padding-top: 100px;
   padding-bottom: 32px;
 }
@@ -227,7 +229,9 @@ _____________________________________
 .rounded-15 {
   border-radius: 15px;
 }
-
+.cursor-pointer{
+  cursor: pointer;
+}
 /*
 _______________________________________________
 _______________________________________________
@@ -241,7 +245,7 @@ Navbar Start */
 .navbar-nav .nav-link::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   height: 2px;
   width: 0%;
@@ -281,7 +285,6 @@ ________________________________________________
 Job Filter Start */
 
 .job-filter .form-select {
-  /* border: 1px solid #e0e0e0; */
   color: #bcbcbc;
   border-radius: 34px !important;
   padding: 12px 45px 12px 25px;
@@ -309,8 +312,19 @@ Job Category Start */
 
 .paths .card {
   padding: 90px 4px 22px;
+  transition: 150ms all ease-in;
+  cursor: pointer;
 }
-
+.paths .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(132, 193, 255, 0.6);
+}
+.paths .card figure {
+  transition: box-shadow 0.3s ease;
+}
+.paths .card:hover figure {
+  box-shadow: 0px -10px 10px rgba(132, 193, 255, 0.5);
+}
 .paths .card figure img {
   width: 40px !important;
   height: 40px !important;
@@ -409,9 +423,10 @@ __________________________________
     width: 50%;
     margin: 0 auto;
   }
+
   .navbar-nav .nav-link:hover::after,
-.navbar-nav .nav-link.active::after {
-  width: 100%;
-  display: none;
-}
+  .navbar-nav .nav-link.active::after {
+    width: 100%;
+    display: none;
+  }
 }
