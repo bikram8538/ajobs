@@ -1,6 +1,4 @@
-
-
-/* Custom Background */
+/* ________________Custom Background________________ */
 
 .bg-primary-blue {
   background-color: #84c1ff;
@@ -14,7 +12,7 @@
 .bg-light-md-grey {
   color: #b4b4b4;
 }
-/* Custom Text Color */
+/* ________________Custom Text Color________________ */
 
 .text-primary-blue {
   color: #84c1ff;
@@ -42,7 +40,7 @@
   color: #ffb917;
 }
 
-/* Custom Button Background and Hover */
+/* ________________Custom Button Background and Hover________________ */
 
 .btn-bg-blue {
   background-color: #85c2ff;
@@ -73,61 +71,23 @@ h2 {
 .topbar .exit-wrapper:hover{
   transform: scale(1.1);
 }
-.navbar-nav .nav-link {
-  position: relative;
-  transition: color 0.3s ease;
-}
-.navbar-nav .nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  width: 0%;
-  background-color: #84c1ff;
-  transition: width 0.3s ease;
-}
-.navbar-nav .nav-link:hover::after,
-.navbar-nav .nav-link.active::after {
-  width: 100%;
-}
 
-.navbar-brand img {
-  max-width: 80px;
-}
-.navbar {
-  transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
-}
 
-.navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.6);
-  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
-}
-.navbar-toggler i {
-  transition: transform 0.3s ease;
-}
-.navbar-toggler.collapsed i {
-  transform: rotate(0deg);
-}
-.navbar-toggler:not(.collapsed) i {
-  transform: rotate(180deg);
-}
-
-/* ================== Banner */
+/* ________________Banner________________ */
 
 .banner {
   min-height: calc(100vh - 70px);
   background-image: url('../images/banner/banner-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-clip: border-box;
   background-color: #000000b3;
   background-blend-mode: multiply;
   padding: 80px 0;
 }
 
-/* Banner Input Dropdown */
+/* ________________Banner Input Dropdown________________ */
 .dropdown-icon::before {
   content: '';
   background: url('../icons/drop-down.png') no-repeat center / contain;
@@ -155,7 +115,7 @@ h2 {
   align-items: center;
 }
 
-/* Remix Icon Customization */
+/* ________________Remix Icon Customization________________ */
 [class^='ri-'],
 [class*=' ri-'] {
   line-height: 1;
@@ -197,9 +157,8 @@ h2 {
   bottom: 0;
   left: 1.5%;
 }
-/* Hiring Now Start */
 
-/* Hiring Now End */
+
 @media (min-width: 1200px) {
   .sub-btn input[type='button'] {
     width: 42px;
@@ -218,11 +177,10 @@ h2 {
     font-size: 18px !important;
   }
 
-  /* navbar */
+  /* ________________navbar________________ */
 
   .navbar-collapse {
     background-color: rgba(132, 193, 255, 0.5);
-    /* border-radius: 12px; */
     backdrop-filter: blur(8px);
     transition: background-color 0.4s ease;
   }
@@ -235,7 +193,7 @@ h2 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  /* navbar smooth dropdown aniamtion */
+  /* ________________navbar smooth dropdown aniamtion________________ */
   .collapse.navbar-collapse {
     height: 0;
   }
